@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: repeating-linear-gradient(120deg,  violet, rgb(156, 7, 156));
+    font-family: 'Antic Slab', Arial, Helvetica, sans-serif;
+    color: purple;
+    font-weight: lighter;
+    line-height: 1.8rem;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.container{
+    /* display: flex; */
+    background: white;
+    width: 80%;
+    margin: auto;
+    height: 600px;
+}
+
+.container .center{
+    color: purple;
+    font-size: 18px;
+    width: 150px;
+    height: 30px;
+    font-family: 'Antic Slab', Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: 2px solid purple;
+    border-radius: 5px;
+}
+
+.dice-img {
+    position: absolute;
+    top: 200px;
+    left: 43%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: none;
+}
+
+i.fas {
+    margin: 0 0 0 12px;
+}
+
+button{
+    border: none !important;
+    outline: none !important;
+}
+
+button:hover{
+    background: purple !important;
+    color: white !important;
+    width: 160px !important;
+}
+
+button.center.new{
+    position: absolute;
+    top: 120px;
+    left: 45%;
+}
+
+
+button.center.roll{
+    position: absolute;
+    bottom: 230px;
+    left: 45%;
+}
+
+button.center.hold{
+    position: absolute;
+    bottom: 120px;
+    left: 45%;
+}
+
+.float-cont{
+    height: 100%;
+    display: flex;
+}
+
+.player{
+    height: 100%;
+    background: rgb(243, 201, 243);
+    width: 50%;
+    text-align: center;
+}
+
+.player h1{
+    margin: 100px 0 40px 0;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.currentScore {
+    margin: 150px 0 0 230px;
+    /* margin-bottom: 50px; */
+    padding: 5px 0 10px 0;
+    width: 150px;
+    height: 100px;
+    background: white;
+    color: purple;
+    border: 2px solid purple;
+    border-radius: 8px;
+}
+
+.currentScore h4{
+    margin: 4px 0 8px 0;
+    font-size: 18px;
+}
+
+.active {
+    background: rgb(230, 143, 230);
+}
+
+.active .active-head:before {
+    font-family: "Webdings";
+    content: "= ";
+    color: black;
+}
+
+.winner{
+    color: black;
+    background: rgb(235, 228, 228);
+    font-family: 'Lemonada', Arial, Helvatica, san-serif;
+}
+
+.winner div.currentScore{
+    background: black;
+    color: white;
+    border: none;
+}

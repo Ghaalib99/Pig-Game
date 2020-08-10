@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css/game.css">
+    <link rel="stylesheet" href="main.css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <title>My Game App</title>
+</head>
+<body>
+    <div class="container">
+        <button class="center new">NEW GAME<i class="fas fa-plus"></i></button>
+        <button class="center roll">ROLL DICE<i class="fas fa-dice"></i></button>
+        <button class="center hold">HOLD<i class="fas fa-stop"></i></button> 
+
+        <img class="dice-img" src="img/dice-1.png" alt="">
+        
+
+        <div class="float-cont">
+            <!-- PLAYER 1 -->
+            <div class="player player-0 active">
+                <h1 class="active-head" id="name-0">PLAYER 1</h1>
+                <h1 id="globalScore-0">0</h1>
+                <div class="currentScore currentScore-0">
+                    <h4>CURRENT</h4>
+                    <h4 id="score-0">10</h4>
+                </div>
+            </div>
+
+            <!-- PLAYER 2 -->
+            <div class="player player-1">
+                <h1 class="active-head" id="name-1">PLAYER 2</h1>
+                <h1 id="globalScore-1">0</h1>
+                <div class="currentScore currentScore-1">
+                    <h4>CURRENT</h4>
+                    <h4 id="score-1">20</h>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
