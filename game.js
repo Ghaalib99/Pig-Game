@@ -25,7 +25,6 @@ document.querySelector('.roll').addEventListener('click', function() {
 
 document.querySelector('.hold').addEventListener('click', function() {
 
-    
         //Add current score to global score
         scores[activePlayer] += roundScore;
 
@@ -74,6 +73,7 @@ function init() {
 
     document.querySelector('.roll').style.display = 'block';
     document.querySelector('.hold').style.display = 'block';
+    document.querySelector('.dice-img').style.display = 'none';
     document.getElementById('globalScore-0').textContent = '0';
     document.getElementById('globalScore-1').textContent = '0';
     document.getElementById('score-0').textContent = '0';
